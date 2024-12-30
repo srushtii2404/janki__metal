@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    overflow-x: hidden;
+}
+<<<<<<< HEAD
+/*common css*/
+.container{
+    max-width: 1458.24px;
+=======
+/* /common css/ */
+.container{
+    max-width: 1358.24px;
+>>>>>>> c2f0fa2 (data)
+}
+:root{
+    --primary-color:#ff3d00;
+    --dark-color:#0d0300;
+    --light-color:#8a7873;
+    --secondary-color:#131131;
+    --white-color:#ffff;
+    --footer-color:#131131;
+    --dull-white:#d1d1d1;
+<<<<<<< HEAD
+=======
+    --bg-color:#f3f5f2;
+    --dark-txt:#c02e00;
+>>>>>>> c2f0fa2 (data)
+}
+.main-box-shadow{
+    box-shadow: 0 12px 24px var(--secondary-color);
+}
+.secondery-shadow{
+    box-shadow: -2px 1px 4px #a9a9a9;
+}
+
+<<<<<<< HEAD
+/*header active time added*/
+=======
+/* /header active time added/ */
+>>>>>>> c2f0fa2 (data)
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Add blur effect */
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Prevent clicking when hidden */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 900; /* Below the side menu */
+  }
+  .active {
+    opacity: 1;
+    visibility: visible; /* Show when active */
+  }
+<<<<<<< HEAD
+  
+=======
+  
+  /* /common margin added all screen/ */
+  .section-margin{
+    margin: 100px 0;
+  }
+  @media screen and (max-width:767px) {
+    .section-margin {
+      margin: 35px 0;
+  }
+  }
+  /* /common margin added all screen/ */
+
+
+  /* /common titles/ */
+.main-text-box
+{
+  position: relative;
+  height: 106px;
+  background-clip: border-box;
+  overflow: hidden;
+  background:transparent;
+  margin: 0 20px;
+  width: 701px;
+}
+.main-text-box video {
+  position: absolute;
+  object-fit: cover;
+  width: 677px;
+}
+  .main-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+    mix-blend-mode: multiply;
+   font-weight: 600;
+  }
+  .secondery-title{
+    font-size: 20px;
+    font-weight:800;
+    color: var(--primary-color);
+    position: relative;
+  }
+  @media screen and (max-width:575px) {
+    .secondery-title {
+      font-size: 23px;
+    }
+    .secondery-title img{
+      height: 20px;
+    }
+  }
+  /* /common titles/ */
+
+  /* /common buttons/ */
+  .primary-btn{
+    display: inline-block;
+    border-radius: 80px;
+    background: linear-gradient(90deg, #FB3F52 0%, #FA7D3C 100%);
+    padding: 12px 12px 12px 18px;
+    color: var(--white-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    border: none;
+    text-decoration: none;
+  }
+  .primary-btn .primary-arrow{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 32px;
+    margin-left: 34px;
+    transform: rotate(-45deg);
+    transition: all 0.4s; 
+} 
+.primary-btn:hover{
+    color: #e6e6e6;
+  }
+.primary-btn:hover .primary-arrow{
+    transform: rotate(0);
+   
+}
+.readmore-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 600;
+  display: inline-block; /* Ensure it's treated like a block for smooth transformation */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.readmore-btn:hover {
+  transform: translateX(30px); /* Moves 30px to the right on hover */
+  color: var(--primary-color); /* Optional: Change color on hover */
+}
+>>>>>>> c2f0fa2 (data)

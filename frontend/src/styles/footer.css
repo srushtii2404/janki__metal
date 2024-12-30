@@ -1,0 +1,199 @@
+<<<<<<< HEAD
+.footer{
+    background-color:var(--footer-color);
+    color: white;
+    padding: 20px 10px;
+}
+
+
+.list-item{
+    color:var(--white-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.list-item:hover{
+    color: white;
+}
+
+.main-text{
+    font-size: 30px;
+}
+
+.secondary-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing:1.2px ;
+}
+
+.small-btn{
+    font-size: 12px;
+    margin: 0px 2px;
+}
+
+
+@media screen and (max-width:956px) {
+    .footer .row{
+        margin-bottom: 10px;
+=======
+.footer {
+    background-color: #262d43;
+    background-image: url("https://media.istockphoto.com/id/666132290/photo/industrial-welder-with-torch.jpg?s=612x612&w=0&k=20&c=D9rDginQVUF_rt-ajYvUz_cgHvoGdCvgqo7wNrcwL5c=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: white;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.list-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.list-item:hover {
+    color: rgb(253, 235, 235);
+}
+
+.toggle-header {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.toggle-header.active {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.icons a {
+    color: white;
+}
+
+.icons a:hover {
+    color: rgb(253, 235, 235);
+}
+
+.contact-link {
+    display: flex;
+    align-items: start; /* Align text and icon horizontally */
+}
+
+.contact-link span {
+    margin-right: 10px; /* Add space between the icon and text */
+}
+
+.contact-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-link a:hover {
+    color: rgb(253, 235, 235);
+}
+
+
+.contact-info {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+/* Style for the footer heading */
+.footer-main-header h5 {
+    font-size: 15px; /* Default font size */
+    font-weight: 600; /* Default weight */
+    color: #fff; /* Default color */
+    position: relative; /* Needed for positioning the border */
+    padding-bottom: 5px; /* Add space for the border */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Hover effect for the heading with border animation */
+.footer-main-header h5:hover {
+    color: var(--primary-color);
+    color: white;
+     /* Change text color on hover */
+}
+
+.footer-main-header h5::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the heading */
+    left: 0; /* Start from the left */
+    width: 0; /* Initially, no width */
+    height: 0.5px; /* Height of the bottom border */
+    background-color: var(--primary-color); /* Color of the bottom border */
+    transition: width 0.3s ease; /* Smooth animation for width */
+}
+
+/* On hover, animate the bottom border from left to right */
+.footer-main-header h5:hover::after {
+    width: 15%; /* Make the width 100% when hovered */
+}
+
+
+.footer-main-header p a {
+    color: rgb(253, 235, 235);
+    text-decoration: none;
+}
+
+.footer-main-header p a:hover {
+    color: white;
+}
+
+/* For the list when it's opened */
+.footer-main-header ul {
+    transition: border-bottom 0.3s ease-in-out; /* Smooth transition for the border */
+}
+
+.last-title p{
+    font-size: 13px;
+}
+
+.last-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .toggle-header {
+        font-size: 16px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px; /* Add padding to create space between the header and the border */
+    }
+
+    .footer-main-header {
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        margin-top: 10px;
+        gap: 16px;
+    }
+
+    .last-title p{
+        font-size: 10px;
+>>>>>>> c2f0fa2 (data)
+    }
+}

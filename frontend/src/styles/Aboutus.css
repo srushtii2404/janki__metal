@@ -1,0 +1,426 @@
+.mission-section {
+    background-color: #131131;
+    padding: 2rem 2rem;
+}
+
+.mission-heading {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.mission-icon {
+    color: var(--primary-color, #ff6600);
+    display: flex;
+    align-items: center;
+}
+
+.mission-icons-content {
+    font-weight: 600;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.mission-details {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+}
+
+.breaf-content-heading {
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.breaf-content-details p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    color: grey;
+    padding-top: 10px;
+}
+
+/* Mission Section Styles */
+.mission-item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.mission-title {
+    font-size: 25px;
+}
+
+.mission-text {
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+}
+
+.mission-main {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .mission-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mission-icons-content {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+    }
+
+    .mission-details {
+        font-size: 0.9rem;
+    }
+
+    .breaf-content-heading {
+        font-size: 1.5rem;
+    }
+
+    .breaf-content-details p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mission-part {
+        padding: 1.5rem 1rem;
+    }
+
+    .mission-heading {
+        gap: 1rem;
+    }
+
+    .mission-icons-content {
+        font-size: 1rem;
+    }
+
+    .mission-details {
+        font-size: 0.85rem;
+    }
+
+    .breaf-content-heading {
+        font-size: 1.25rem;
+    }
+
+    .breaf-content-details p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Timeline Section Styles */
+.timeline-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.timeline-item {
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-item:hover {
+    background-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.timeline-year {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    transition: all 0.3s ease;
+}
+
+.timeline-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+.timeline-item.active {
+    background-color: #ff6f61;
+    color: white;
+    transform: scale(1.1);
+}
+
+.timeline-content.active {
+    transform: translateY(20px);
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: scale(1.1);
+}
+
+.timeline-year {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    border: 3px solid #ff6f61;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.timeline-year i {
+    color: #ff6f61;
+    font-size: 24px;
+}
+
+.year-text {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -43px;
+}
+
+.timeline-details {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.timeline-details h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.timeline-details p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Timeline Container */
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap when necessary */
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Timeline Items */
+.timeline-item {
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 50%;
+    margin: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-year {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.year-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Hover Effect */
+.timeline-item:hover {
+    background-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .timeline-item {
+        margin: 25px 0; /* Decrease the margin between items */
+    }
+
+    .timeline-year {
+        font-size: 20px; /* Adjust the font size of the year */
+    }
+
+    .year-text {
+        font-size: 14px; /* Adjust the font size of the year text */
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        padding: 12px 18px; /* Decrease padding for mobile view */
+    }
+
+    .timeline-year {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .year-text {
+        font-size: 12px; /* Adjust year text for smaller screens */
+    }
+}
+
+/* General Leadership Section Styles */
+.leadership-section {
+    background-color: #f8f9fa;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .timeline-details h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-details p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Leadership Item Styles */
+  .leader-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .leader-data .col-lg-4 {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .leader-data .col-lg-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .leader-data img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .leader-data h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .leader-data p {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .leader-data .col-lg-4 {
+      max-width: 100%;
+    }
+  
+    .timeline-details h3 {
+      font-size: 2rem;
+    }
+  
+    .timeline-details p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-details h3 {
+      font-size: 1.75rem;
+    }
+  
+    .timeline-details p {
+      font-size: 0.95rem;
+    }
+  
+    .leader-data .col-lg-4 {
+      width: 100%;
+    }
+  }
+  
