@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "axios": "^1.7.9",
-=======
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.3.0",
@@ -14,7 +11,6 @@
     "aos": "^2.3.4",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
->>>>>>> c2f0fa2 (data)
     "cra-template": "1.2.0",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
@@ -24,10 +20,7 @@
     "react-owl-carousel": "^2.3.3",
     "react-router-dom": "^7.1.0",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
-=======
     "react-toastify": "^11.0.2",
->>>>>>> c2f0fa2 (data)
     "web-vitals": "^4.2.4"
   },
   "scripts": {

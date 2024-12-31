@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import axios from 'axios';
-import './Contactus.css';
-=======
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -12,7 +7,6 @@ import { MdLocationPin } from "react-icons/md";
 import { IoMdCall, IoMdMail } from "react-icons/io";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
->>>>>>> c2f0fa2 (data)
 
 const Contactus = () => {
   const [formData, setFormData] = useState({
@@ -22,8 +16,6 @@ const Contactus = () => {
     message: '',
   });
 
-<<<<<<< HEAD
-=======
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,7 +25,6 @@ const Contactus = () => {
     });
   }, []);
 
->>>>>>> c2f0fa2 (data)
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -42,14 +33,6 @@ const Contactus = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-<<<<<<< HEAD
-      const response = await axios.post('http://localhost:8080/data/postdata', formData);
-      alert('Message sent successfully!');
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error sending message:', error);
-      alert('Failed to send the message.');
-=======
       const response = await axios.post(
         'http://localhost:8080/data/postdata',
         formData
@@ -63,46 +46,10 @@ const Contactus = () => {
       toast.error('Failed to send the message.', {
         closeButton: false,
       });
->>>>>>> c2f0fa2 (data)
     }
   };
 
   return (
-<<<<<<< HEAD
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="name"
-        placeholder="Enter name"
-        value={formData.name}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Enter your email"
-        value={formData.email}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="text"
-        name="phone"
-        placeholder="Enter your phone"
-        value={formData.phone}
-        onChange={handleChange}
-        required
-      />
-      <textarea
-        name="message"
-        placeholder="Enter your message"
-        value={formData.message}
-        onChange={handleChange}
-      ></textarea>
-      <button type="submit">Submit</button>
-    </form>
-=======
     <div className="contactus-container">
       {/* Banner Section */}
       <div className="row">
@@ -238,7 +185,6 @@ const Contactus = () => {
         ></iframe>
       </div>
     </div>
->>>>>>> c2f0fa2 (data)
   );
 };
 

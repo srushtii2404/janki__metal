@@ -4,15 +4,9 @@ body{
     font-family: "Poppins", serif;
     overflow-x: hidden;
 }
-<<<<<<< HEAD
-/*common css*/
-.container{
-    max-width: 1458.24px;
-=======
 /* /common css/ */
 .container{
     max-width: 1358.24px;
->>>>>>> c2f0fa2 (data)
 }
 :root{
     --primary-color:#ff3d00;
@@ -22,11 +16,8 @@ body{
     --white-color:#ffff;
     --footer-color:#131131;
     --dull-white:#d1d1d1;
-<<<<<<< HEAD
-=======
     --bg-color:#f3f5f2;
     --dark-txt:#c02e00;
->>>>>>> c2f0fa2 (data)
 }
 .main-box-shadow{
     box-shadow: 0 12px 24px var(--secondary-color);
@@ -35,11 +26,7 @@ body{
     box-shadow: -2px 1px 4px #a9a9a9;
 }
 
-<<<<<<< HEAD
-/*header active time added*/
-=======
 /* /header active time added/ */
->>>>>>> c2f0fa2 (data)
 .overlay {
     position: fixed;
     top: 0;
@@ -57,9 +44,6 @@ body{
     opacity: 1;
     visibility: visible; /* Show when active */
   }
-<<<<<<< HEAD
-  
-=======
   
   /* /common margin added all screen/ */
   .section-margin{
@@ -172,4 +156,3 @@ body{
   transform: translateX(30px); /* Moves 30px to the right on hover */
   color: var(--primary-color); /* Optional: Change color on hover */
 }
->>>>>>> c2f0fa2 (data)

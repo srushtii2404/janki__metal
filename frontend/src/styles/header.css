@@ -8,11 +8,7 @@
     z-index: 1000;
 } */
  
-<<<<<<< HEAD
-.header {
-=======
 header {
->>>>>>> c2f0fa2 (data)
     position: absolute;
         top: 0;
         padding: 10px 0;
@@ -43,13 +39,8 @@ header {
     padding: 10px 0;
     transition: 0.5s all ease-in-out;
     animation-name: slideInDown;
-<<<<<<< HEAD
-    width: 86%;
-    left: 13px;
-=======
     width: 92%;
     left: 33px;
->>>>>>> c2f0fa2 (data)
 }
 @keyframes slideInDown{
 0% {

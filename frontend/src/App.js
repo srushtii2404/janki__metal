@@ -13,14 +13,10 @@ import Error from './pages/Error';
 import './styles/main.css';
 import './commonjs/common.js';
 import Footer from './components/Footer';
-<<<<<<< HEAD
-import HexBar from './pages/HexBar';
-=======
 import Thankyou from './pages/Thankyou';
 import HexBar from './pages/HexBar';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
->>>>>>> c2f0fa2 (data)
 
 function App() {
   return (
@@ -35,16 +31,11 @@ function App() {
         <Route path='/infrastructure' element={<Infrastructure />} />
         <Route path='/applications' element={<Applications />} />
         <Route path='/contactus' element={<Contactus />} />
-<<<<<<< HEAD
-=======
         <Route path='/thankyoupage' element={<Thankyou />} />
->>>>>>> c2f0fa2 (data)
         <Route path='/hexbar' element={<HexBar/>}/>
         <Route path='*' element={<Error />} />
       </Routes>
       <Footer/>
-<<<<<<< HEAD
-=======
 
 
       <ToastContainer 
@@ -57,7 +48,6 @@ function App() {
         draggable 
         pauseOnHover 
       />
->>>>>>> c2f0fa2 (data)
     </BrowserRouter>
   );
 }

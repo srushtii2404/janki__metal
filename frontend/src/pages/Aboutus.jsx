@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-const Aboutus = () => {
-  return (
-    <div>Aboutus</div>
-  )
-}
-
-export default Aboutus
-=======
 import React, { useState } from 'react';
 import { TbTargetArrow } from "react-icons/tb";
 import { GiBoltEye, GiProgression } from "react-icons/gi";
@@ -161,4 +150,3 @@ const Aboutus = () => {
 }
 
 export default Aboutus;
->>>>>>> c2f0fa2 (data)

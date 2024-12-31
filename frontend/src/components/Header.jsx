@@ -1,20 +1,12 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
-<<<<<<< HEAD
-import { Link } from 'react-router-dom';
-=======
 import { Link, useLocation } from 'react-router-dom';
->>>>>>> c2f0fa2 (data)
 import { BiSearch } from "react-icons/bi";
 import { CiMenuFries } from "react-icons/ci";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-<<<<<<< HEAD
-    const headerRef = useRef(null); // Create a reference for the header component
-=======
     const headerRef = useRef(null); 
 
->>>>>>> c2f0fa2 (data)
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);

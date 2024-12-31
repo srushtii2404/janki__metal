@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutSection from '../components/Aboutsection';
 const Home = () => {
   return (
     <>
@@ -62,6 +63,8 @@ const Home = () => {
           </button>
         </div>
       </section>
+      
+      <AboutSection />
     </>
   )
 }
