@@ -1,0 +1,54 @@
+.About-section .sub-text{
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 600;
+    z-index: 999;
+    position: relative;
+    color:var(--footer-color);
+  }
+  .About-section .left-part{
+      position: relative;
+  }
+  .About-section .left-part::before{
+      position: absolute;
+      content: "";
+      background: url(../../public/images/abimg.png);
+      height: 340px;
+      width: 360px;
+      opacity: 0.05;
+      background-repeat: no-repeat;
+      top: 20px;
+      left: 49px;
+  }
+  .About-section .text-contente{
+      color: var(--primary-color);
+      font-size: 25px;
+      font-weight: 500;
+      margin-top: 5px;
+  }
+  
+  @media screen and (max-width:991px) {
+      .About-section .text-contente {
+          font-size: 20px;
+      }    
+  }
+  @media screen and (max-width:767px) {
+      .About-section .sub-text {
+          font-size: 21px;
+          line-height: 34px;
+      }
+          .About-section .text-contente {
+              font-size: 16px;
+          }
+          .About-section .left-part::before {
+              display: none;
+          }
+  
+  }
+  
+  @media screen and (max-width: 575px) {
+      .About-section .sub-text {
+          font-size: 16px;
+          line-height: 28px;
+      }
+  }

@@ -22,7 +22,7 @@ header {
     .header.scrolled {
         position: absolute;
             top: 33px;
-            border-radius: 10px 40px 10px 40px;
+            border-radius:40px;
             padding: 0px 0;
             margin: 30px 20px;
             z-index: 1000;
@@ -218,6 +218,19 @@ header {
 .icon-container{
     display: flex;
 }
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it is above the navigation menu */
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 
 @media screen and (max-width:1199.5px) {
     .header .header-container {
@@ -236,12 +249,16 @@ header {
 }
 
 
+
 /* Responsive */
 @media screen and (max-width: 1100px) {
+    
     .nav-menu {
         display: none;
     }
-
+    .responcive-logo{
+        display: block !important;
+    }
     .nav-menu {
         display: none;
         position: fixed;
@@ -258,7 +275,7 @@ header {
         align-items: start;
     }
 
-    .nav-menu.open {
+    /* .nav-menu.open {
         display: flex; 
         flex-direction: column;
         justify-content: flex-start;
@@ -270,7 +287,34 @@ header {
         height: 100vh;
         transition: 0.5s all ease-in-out;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    } */
+
+    .header .nav-menu.open {
+        display: flex; 
+        position:fixed;
+        z-index: 1100;
+        flex-direction: column;
+        justify-content: flex-start;
+         position: absolute;
+        top: 0; 
+        right: 0;
+        background-color:var(--white-color);
+        width: 300px;
+        height: 100vh;
+        z-index: 999999999;
+        color: var(--dark-color);
+        transition: 0.5s all ease-in-out;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+    /*after scroll added*/
+    .header.scrolled  .nav-menu.open {
+        top: -20px;
+        right: -38px;
+    }
+    .header .nav-menu.open .nav-item .nav-link{
+        color: var(--dark-color) !important;
+    }
+    
     .header .nav-menu .nav-list {
         flex-direction: column;
         width: 100%;
@@ -279,8 +323,12 @@ header {
         border-bottom: 2px solid #8a787321;
         padding: 17px 0;
     }
+    .responcive-logo{
+      display: block;  
+    }
     .menu-button {
         display: block;
+        z-index: 9999999;
     }
 
     .header-container {
@@ -305,6 +353,10 @@ header {
         right: 0;
         top: 0;
         border-radius: 0;
+    }
+    .header.scrolled  .nav-menu.open {
+        top: 0;
+        right: -38px;
     }
 }
 @media screen and (max-width:575px) {
