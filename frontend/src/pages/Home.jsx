@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutSection from '../components/Aboutsection';
+import BrightBarssection from '../components/Brightbarsection';
 const Home = () => {
   return (
     <>
@@ -65,6 +66,7 @@ const Home = () => {
       </section>
       
       <AboutSection />
+      <BrightBarssection />
     </>
   )
 }
