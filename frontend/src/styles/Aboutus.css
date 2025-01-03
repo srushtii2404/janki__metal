@@ -1,159 +1,47 @@
-.mission-section {
-    background-color: #131131;
-    padding: 2rem 2rem;
-}
-
-.mission-heading {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-}
-
-.mission-icon {
-    color: var(--primary-color, #ff6600);
-    display: flex;
-    align-items: center;
-}
-
-.mission-icons-content {
-    font-weight: 600;
-    color: white;
-    font-size: 1.2rem;
-}
-
-.mission-details {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: white;
-    text-align: left;
-}
-
-.breaf-content-heading {
-    font-size: 35px;
-    font-weight: 400;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.breaf-content-details p {
-    font-size: 20px;
-    font-weight: 300;
-    text-align: justify;
-    color: grey;
-    padding-top: 10px;
-}
-
-/* Mission Section Styles */
-.mission-item {
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: flex-start;
-    max-width: 100%;
-}
-
-.mission-title {
-    font-size: 25px;
-}
-
-.mission-text {
-    font-size: 15px;
-    color: white;
-    line-height: 1.5;
-}
-
-.mission-main {
-    color: white;
-    font-size: 30px;
-    display: flex;
-    align-items: flex-start;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    .mission-heading {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .mission-icons-content {
-        font-size: 1.1rem;
-        margin-top: 0.5rem;
-    }
-
-    .mission-details {
-        font-size: 0.9rem;
-    }
-
-    .breaf-content-heading {
-        font-size: 1.5rem;
-    }
-
-    .breaf-content-details p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .mission-part {
-        padding: 1.5rem 1rem;
-    }
-
-    .mission-heading {
-        gap: 1rem;
-    }
-
-    .mission-icons-content {
-        font-size: 1rem;
-    }
-
-    .mission-details {
-        font-size: 0.85rem;
-    }
-
-    .breaf-content-heading {
-        font-size: 1.25rem;
-    }
-
-    .breaf-content-details p {
-        font-size: 0.95rem;
-    }
-}
-
-/* Timeline Section Styles */
-.timeline-section {
-    padding: 50px 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
 .timeline {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 0px 180px;
 }
 
 .timeline-item {
-    background-color: #fff;
-    padding: 15px 25px;
+    padding: 10px;
     border-radius: 50%;
-    margin: 0 15px;
+    margin: -10px;
     cursor: pointer;
+    text-align: center;
     transition: all 0.3s ease;
     position: relative;
-    z-index: 1;
-}
-
-.timeline-item:hover {
-    background-color: #ff6f61;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .timeline-year {
-    font-size: 18px;
-    color: #333;
-    font-weight: bold;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid #ff6f61;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    color: #4a4949;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+.year-text {
+    font-size: 18   px;
+    color: #666;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -43px;
 }
 
 .timeline-content {
@@ -161,9 +49,10 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 900px;
     margin: 50px auto;
     transition: all 0.3s ease;
+    text-align: justify;
 }
 
 .timeline-content h3 {
@@ -174,74 +63,35 @@
 
 .timeline-content p {
     font-size: 16px;
+    line-height: 1.5;
     color: #666;
 }
 
-.timeline-item.active {
-    background-color: #ff6f61;
-    color: white;
-    transform: scale(1.1);
-}
-
-.timeline-content.active {
-    transform: translateY(20px);
-}
-
-.timeline-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.timeline-item:hover {
-    transform: scale(1.1);
-}
-
-.timeline-year {
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 20px;
-    border: 3px solid #ff6f61;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    position: relative;
-}
-
-.timeline-year i {
-    color: #ff6f61;
-    font-size: 24px;
-}
-
-.year-text {
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
-    margin-top: 10px;
-    position: absolute;
-    bottom: -43px;
-}
-
-.timeline-details {
+.timeline-section {
     width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
     text-align: center;
-    margin-left: auto;
-    margin-bottom: 30px;
-}
+    padding: 50px 0px;
+  }
+  
+  
+  .timeline-item:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  .timeline-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-.timeline-details h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
+  .timeline-details h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .timeline-details p {
@@ -249,178 +99,551 @@
     color: #666;
     max-width: 800px;
     margin: 0 auto;
+    line-height: 1.6;
 }
 
-/* Timeline Container */
-.timeline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap when necessary */
-    padding: 20px;
-    margin: 0 auto;
-}
-
-/* Timeline Items */
-.timeline-item {
-    background-color: #fff;
-    padding: 15px 25px;
-    border-radius: 50%;
-    margin: 15px;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.3s ease;
+.timeline-line {
     position: relative;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background-color: #e0e0e0; /* Light grey background for the line */
+    margin: 20px auto;
+    border-radius: 50px; /* Makes the line rounded */
+    overflow: hidden;
+}
+
+.progress-line {
+    position: absolute;
+    height: 5px; /* Matching the height of the base line */
+    width: 0; /* Initially set to 0, will expand dynamically */
+    background: var(--primary-color); /* Gradient effect for the line */
+    border-radius: 50px; /* Ensures the line has smooth rounded ends */
+    transition: width 0.5s linear; /* Smooth animation when width changes */
+    z-index: 0; /* Keeps it above the base line */
+    left: 0;
+    top: 0; 
+}
+  
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: row;
+        align-items:center;
+    }
+
+    .timeline-item {
+        padding: 12px 18px;
+        margin: 25px 0;
+    }
+
+    .timeline-year {
+        font-size: 18px;
+    }
+
+    .year-text {
+        font-size: 12px;
+    }
+
+    .timeline-details h3 {
+        font-size: 1.75rem;
+    }
+
+    .timeline-details p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Responsive Timeline for screens smaller than 460px */
+@media (max-width: 920px) {
+    .timeline {
+        padding: 10px; /* Reduce padding around the timeline */
+    }
+
+    .timeline-item {
+        padding: 10px 7px; /* Reduce padding on each timeline item */
+        margin: 10px 0; /* Reduce margin between items */
+    }
+
+    .timeline-year {
+        font-size: 13px; /* Smaller font size for the year */
+        width: 40px; /* Adjust width of the year circle */
+        height: 40px; /* Adjust height of the year circle */
+    }
+
+    .timeline-content {
+        font-size: 10px; /* Smaller font size for content */
+        padding: 10px; /* Reduce padding for the content */
+    }
+
+    .timeline-details h3 {
+        font-size: 1rem; /* Smaller font size for the heading */
+    }
+
+    .timeline-details p {
+        font-size: 0.7rem; /* Smaller text for details */
+    }
+
+    .progress-line {
+        height: 1px; /* Smaller progress line */
+    }
+}
+
+
+/* /////////////////////////////////////////////////////////   leader */
+
+.leadership-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+
+}
+
+
+.leadership-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .leadership-section p{
+    color: gray;
+  }
+  
+  .leadership-cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+    .leadership-card {
+    align-items: center;        
+    justify-content: space-around;
+    width: 300px;
+    padding: 20px;
+    background: #f9f8f8;
+    margin: 20px;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(28, 28, 28, 0.1);
+    transition: transform 0.3s ease, height 0.3s ease;
+    overflow: hidden;
+    height: 350px; /* Default height */
+    background-color:#f9f8f8;
+
+  }
+  
+  .leadership-card.expanded {
+    height: auto; /* Automatically adjusts height */
+  }
+  
+  .leadership-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+  }
+  
+  .leadership-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(49, 44, 44);
+  }
+  
+  .leadership-card p {
+    color: #555;
+  }
+  
+  .details {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color:black;
+  }
+  
+  .know-more{
+    color:var(--primary-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 12.5px;
+    font-weight: 600;
+    background: none;
+  }
+
+
+
+
+
+
+
+
+
+
+  .vision-mission-values {
+    display: flex;
+    flex-direction: column; /* Arrange the sections vertically */
+    gap: 10px; /* Space between the sections */
+    background-color:#131131;
+    padding: 30px 0px;
+  }
+  
+  .vision-box,
+  .mission-box,
+  .values-box {
+    width: 100%; /* Full width of the container */
+    padding: 30px 68px;
+    border-radius: 8px;
+    /* background-color: #f9f9f9; */
+    text-align: left; /* Center the content */
+  }
+  
+  .vision-mission-values h3 {
+    font-size: 1.7rem;
+    color: white;
+    margin-top: 10px;
+    font-weight: 700;
+  }
+  
+  .vision-mission-values p {
+    font-size: 1rem;
+    color: rgb(225, 223, 223);
+    font-weight: normal;
+  }
+  
+  .m-icon {
+    color: var(--primary-color); /* Icon color */
+    margin-bottom: 10px; /* Space between icon and heading */
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .contributors-section{
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f8f8;
+  }
+
+  .contributors-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .contributors-section p{
+    color: gray;
+    margin-bottom: 60px;
+  }
+  
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.timeline-year {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Default styles for larger screens */
+.timeline-content h3 {
     font-size: 24px;
-    color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #ff6f61;
 }
 
-.year-text {
+.timeline-content p {
     font-size: 16px;
+    line-height: 1.5;
     color: #666;
 }
 
-/* Hover Effect */
-.timeline-item:hover {
-    background-color: #ff6f61;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width: 768px) {
-    .timeline {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-    }
-
-    .timeline-item {
-        margin: 25px 0; /* Decrease the margin between items */
-    }
-
-    .timeline-year {
-        font-size: 20px; /* Adjust the font size of the year */
-    }
-
-    .year-text {
-        font-size: 14px; /* Adjust the font size of the year text */
-    }
-}
-
-@media (max-width: 768px) {
-    .timeline-item {
-        padding: 12px 18px; /* Decrease padding for mobile view */
-    }
-
-    .timeline-year {
-        font-size: 18px; /* Adjust font size for smaller screens */
-    }
-
-    .year-text {
-        font-size: 12px; /* Adjust year text for smaller screens */
-    }
-}
-
-/* General Leadership Section Styles */
-.leadership-section {
-    background-color: #f8f9fa;
-    padding: 5rem 2rem;
-    text-align: center;
-  }
-  
-  .timeline-details h3 {
+.timeline-details h3 {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #333;
+    color: var(--primary-color);
     margin-bottom: 1rem;
-  }
-  
-  .timeline-details p {
-    font-size: 1.1rem;
+}
+
+.timeline-details p {
+    font-size: 1rem;
     color: #666;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
-  }
-  
-  /* Leadership Item Styles */
-  .leader-data {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  
-  .leader-data .col-lg-4 {
-    max-width: 350px;
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.3s ease;
-  }
-  
-  .leader-data .col-lg-4:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  .leader-data img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  .leader-data h1 {
-    font-size: 1.5rem;
+}
+
+.leadership-section h2 {
+    font-size: 2.5rem;
     font-weight: 600;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
-  .leader-data p {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.leadership-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(49, 44, 44);
+}
+
+.leadership-card p {
+    color: #555;
+}
+
+.vision-mission-values h3 {
+    font-size: 1.7rem;
+    color: white;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.vision-mission-values p {
     font-size: 1rem;
-    color: #888;
-    margin-bottom: 0;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 992px) {
-    .leader-data .col-lg-4 {
-      max-width: 100%;
+    color: rgb(225, 223, 223);
+    font-weight: normal;
+}
+
+
+
+/* Responsive font sizes for smaller screens */
+@media (max-width: 768px) {
+    .timeline-content h3 {
+        font-size: 20px; /* Smaller font size for smaller screens */
     }
-  
+
+    .timeline-content p {
+        font-size: 14px; /* Smaller font size */
+    }
+
     .timeline-details h3 {
-      font-size: 2rem;
+        font-size: 2rem; /* Adjusted size */
     }
-  
+
     .timeline-details p {
-      font-size: 1rem;
+        font-size: 0.9rem; /* Smaller font size */
     }
+
+    .leadership-section h2 {
+        font-size: 2rem; /* Adjust size */
+    }
+
+    .leadership-card h3 {
+        font-size: 1rem; /* Smaller size */
+    }
+
+    .leadership-card p {
+        font-size: 0.9rem; /* Smaller size */
+    }
+
+    .vision-mission-values h3 {
+        font-size: 1.4rem; /* Reduced size */
+    }
+
+    .vision-mission-values p {
+        font-size: 0.9rem; /* Reduced font size */
+    }
+
+    .contributors-section h2 {
+        font-size: 2rem; /* Reduced font size */
+    }
+
+    .contributors-section p {
+        font-size: 0.9rem; /* Adjusted for smaller screens */
+    }
+}
+
+/* Even smaller screens (below 480px) */
+@media (max-width: 480px) {
+    .timeline-content h3 {
+        font-size: 18px; /* Even smaller size */
+    }
+
+    .timeline-content p {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .timeline-details h3 {
+        font-size: 1.75rem; /* Adjusted for smaller screens */
+    }
+
+    .timeline-details p {
+        font-size: 0.85rem; /* Adjusted */
+    }
+
+    .leadership-section h2 {
+        font-size: 1.8rem; /* Adjust for very small screens */
+    }
+
+    .leadership-card h3 {
+        font-size: 0.9rem; /* Even smaller size */
+    }
+
+    .leadership-card p {
+        font-size: 0.8rem; /* Adjusted */
+    }
+
+    .vision-mission-values h3 {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .vision-mission-values p {
+        font-size: 0.8rem; /* Reduced font size */
+    }
+
+    .contributors-section h2 {
+        font-size: 1.8rem; /* Adjusted for small screens */
+    }
+
+    .contributors-section p {
+        font-size: 0.8rem; /* Smaller text */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Section Styling */
+.contributors-section {
+    padding: 50px 15px;
+    background-color: #f9f9f9;
+    text-align: center;
   }
   
+  .contributors-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .contributors-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Dialog Styling */
+  dialog {
+    width: 90%;
+    max-width: 800px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #fff;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  dialog p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .closeDialog {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 1rem;
+    background-color: #ebd3c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .closeDialog:hover {
+    background-color: #e05500;
+  }
+  
+  /* Button Styling */
+  button[data-dialog] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[data-dialog]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Responsive Design */
   @media (max-width: 768px) {
-    .timeline-details h3 {
+    .contributors-section h2 {
       font-size: 1.75rem;
     }
   
-    .timeline-details p {
-      font-size: 0.95rem;
-    }
-  
-    .leader-data .col-lg-4 {
-      width: 100%;
+    .contributors-section p {
+      font-size: 0.9rem;
     }
   }
+  
+  @media (max-width: 576px) {
+    .contributors-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contributors-section p {
+      font-size: 0.85rem;
+    }
+  
+    button[data-dialog] {
+      font-size: 0.9rem;
+    }
+  
+    .closeDialog {
+      font-size: 0.9rem;
+    }
+  }
+
+
+  
+  
+
+
+
+
   
