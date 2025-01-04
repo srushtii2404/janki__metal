@@ -16,7 +16,7 @@ const BrightBarssection = () => {
     autoplay: true,
     autoplaySpeed: 6000,
     centerMode: true, // Enables center mode
-    centerPadding: '10px', // Adjust padding around center slides
+    centerPadding: '20px', // Adjust padding around center slides
     responsive: [
       {
         breakpoint: 1200,

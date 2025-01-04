@@ -1,6 +1,8 @@
 import React from 'react';
 import AboutSection from '../components/Aboutsection';
 import BrightBarssection from '../components/Brightbarsection';
+import { Videosection } from '../components/Videosection';
+import { Gallerysection } from '../components/Gallerysection';
 const Home = () => {
   return (
     <>
@@ -79,6 +81,8 @@ const Home = () => {
       
       <AboutSection />
       <BrightBarssection />
+      <Videosection />
+      <Gallerysection />
     </>
   )
 }

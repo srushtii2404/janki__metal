@@ -62,3 +62,63 @@ setTimeout(function () {
     content.style.opacity = "1"; // Ensure initial visibility
   });
 }, 1000); // Adjust initial delay if needed
+
+
+
+
+/*video popup */
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all anchor tags within the .video-gallery container
+  const videoGallery = document.querySelector(".video-section");
+  const links = videoGallery.querySelectorAll("#play-video");
+
+  // Add click event listeners to each link
+  links.forEach(link => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      // Create an iframe dynamically
+      const iframe = document.createElement("iframe");
+      iframe.src = this.href;
+      iframe.style.width = "80%";
+      iframe.style.height = "80%";
+      iframe.style.border = "none";
+
+      // Create a popup container
+      const popup = document.createElement("div");
+      popup.style.position = "fixed";
+      popup.style.top = "0";
+      popup.style.left = "0";
+      popup.style.width = "100%";
+      popup.style.height = "100%";
+      popup.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+      popup.style.display = "flex";
+      popup.style.justifyContent = "center";
+      popup.style.alignItems = "center";
+      popup.style.zIndex = "1000";
+
+      // Create a close button
+      const closeButton = document.createElement("div");
+      closeButton.textContent = "✖";
+      closeButton.style.position = "absolute";
+      closeButton.style.top = "20px";
+      closeButton.style.right = "20px";
+      closeButton.style.fontSize = "24px";
+      closeButton.style.color = "#fff";
+      closeButton.style.cursor = "pointer";
+      closeButton.style.zIndex = "1001";
+
+      // Add a click event to close the popup
+      closeButton.addEventListener("click", function () {
+        popup.remove();
+      });
+
+      // Append the iframe and close button to the popup
+      popup.appendChild(iframe);
+      popup.appendChild(closeButton);
+
+      // Append the popup to the body
+      document.body.appendChild(popup);
+    });
+  });
+});
