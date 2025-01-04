@@ -1,0 +1,161 @@
+.video-section{
+    background-color: rgb(212, 212, 212);
+    padding: 130px 0;
+    background-image: url(../../public/images/meltsteel.jpg);
+    background-repeat:no-repeat;
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+}
+.video-section::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color:rgba(0,0,0, .55);
+}
+/* .video-section-container{
+    width: 80%;
+    max-width: 1300px;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 80px 20px;
+    backdrop-filter: blur(4px);
+} */
+.video-section-area .video-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+position: absolute;
+top: 20px;
+padding: 0 20px;
+}
+.video-section-area .content {
+    margin: 100px 0 20px;
+}
+/* 
+.video-section-area .video-header .heading-section{
+   position: absolute;
+   bottom: -8px;
+   left: 30%;
+   opacity: 1;
+   z-index: 99;
+   background-color: var(--primary-color);
+   padding: 5px 20px;
+   border-radius: 40px;
+} */
+.video-section .video-section-container{
+   position: relative;
+   z-index: 999;
+}
+.video-header .heading-section .heading{
+   color: var(--white-color);
+   font-size: 70px;
+   font-weight: 600;
+   z-index: 9;
+}
+.video-section .button-section{
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+}
+.video-section .line{
+    height: 1px;
+    width: 370px;
+    background-color: #b6b6b6;
+}
+
+
+.video-play-button {
+    z-index: 10;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #eb2055; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: #001049;
+    border-radius: 50%;
+    animation: pulse-border 1100ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background:#1a0b00;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 19px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    top: 10px;
+    left: 5px;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2.2);
+      opacity: 0;
+    }
+  }
+
+  @media screen and (max-width:991px) {
+    .video-header .heading-section .heading {
+        font-size: 54px;
+    }
+  }
+
+  @media screen and (max-width:767px) {
+        .video-header .heading-section .heading {
+            font-size: 39px;
+        }
+        .video-section {
+            background-color: rgb(212, 212, 212);
+            padding: 64px 0;
+        }
+  }
+  @media screen and (max-width: 575px) {
+    .video-header .heading-section .heading {
+        font-size: 28px;
+    }
+    .video-section .line {
+        width: 230px;
+    }
+    }

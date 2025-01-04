@@ -11,7 +11,8 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(55, 19, 5, 0.9);
+    /* background: rgba(55, 19, 5, 0.9); */
+    background-color: rgb(0 0 0 / 90%);
     opacity: 0.9;
     z-index: 1;
 }
