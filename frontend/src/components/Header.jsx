@@ -45,7 +45,10 @@ const Header = () => {
                             <h1 className="logo-text desktop-logo logo-header">
                                <img src="images/jankimetallogo.png" alt="company-logo" /> 
                             </h1>
-                            <h1 className="logo-text mobile-logo">Janki Metal</h1>
+                            <h1 className="logo-text mobile-logo logo-header">
+                               <img src="images/jankimetallogo.png" alt="company-logo" /> 
+                            </h1>
+                            {/* <h1 className="logo-text ">Janki Metal</h1> */}
                         </Link>
                     </div>
 
@@ -55,7 +58,7 @@ const Header = () => {
                             <li className="nav-item">
                                 <Link to="/aboutus" className="nav-link">About us</Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link to="/blackbars" className="nav-link">Black Bars</Link>
                             </li>
                             <li className="nav-item">
@@ -63,6 +66,9 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link to="/steelgrades" className="nav-link">Steel Grades</Link>
+                            </li> */}
+                            <li className="nav-item">
+                                <Link to="/steelgrades" className="nav-link">All Products</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/infrastructure" className="nav-link">Infrastructure</Link>
