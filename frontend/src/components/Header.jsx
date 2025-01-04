@@ -1,15 +1,21 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import { CiMenuFries } from 'react-icons/ci';
 import { MdClose } from 'react-icons/md';
 
 const Header = () => {
+    const location = useLocation();
+  
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const headerRef = useRef(null);
 
     const toggleMenu = () => {
         setIsMenuOpen((prev) => !prev);
     };
+
+    const headerClass = location.pathname === "/category" ? "category-header" : "header";
+
 
     useLayoutEffect(() => {
         const handleScroll = () => {
@@ -31,12 +37,14 @@ const Header = () => {
 
     return (
         <div className="container-fluid p-0">
-            <header ref={headerRef} className="header">
+            <header ref={headerRef} className={`header ${headerClass}`}>
                 <div className="header-container">
                     {/* Logo */}
                     <div className="logo">
                         <Link to="/" className="logo-link">
-                            <h1 className="logo-text desktop-logo">Janki Metal</h1>
+                            <h1 className="logo-text desktop-logo logo-header">
+                               <img src="images/jankimetallogo.png" alt="company-logo" /> 
+                            </h1>
                             <h1 className="logo-text mobile-logo">Janki Metal</h1>
                         </Link>
                     </div>

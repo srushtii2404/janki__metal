@@ -9,20 +9,17 @@
 } */
  
 header {
-    position: absolute;
+       position: absolute;
         top: 0;
-        padding: 10px 0;
+        /* padding: 10px 0; */
         z-index: 1000;
         width: 100%;
         margin: auto;
         transition: 0.5s all ease-in-out;
         box-shadow: none !important;
-        border-bottom: 1px solid #464545;
+        border-bottom: 1px solid #60606078;
     }
     .header.scrolled {
-        position: absolute;
-            top: 33px;
-            border-radius:40px;
             padding: 0px 0;
             margin: 30px 20px;
             z-index: 1000;
@@ -32,15 +29,22 @@ header {
             background-color: var(--white-color);
             transition: 0.5s all ease-in-out;
             box-shadow: 1px 1px 5px 2px #484747 !important;
+            transition: 0.5s all ease-in-out;
+            animation-name: slideInDown;
+            left: 0;
+            right: 0;  
+            width: 100%;  
+            position: fixed;
+            top: 0;
+  
         } 
-.header.scrolled{
-    position: fixed;
-    top: 20px;
-    padding: 10px 0;
-    transition: 0.5s all ease-in-out;
-    animation-name: slideInDown;
-    width: 92%;
-    left: 33px;
+
+.logo-header{
+max-width: 145px;
+}
+.logo-header img{
+    height: 100%;
+    width: 100%;
 }
 @keyframes slideInDown{
 0% {
@@ -128,10 +132,14 @@ header {
     font-size: 16px;
     font-weight: 400;
     color: var(--white-color);
+    transition: 0.5s all ease-in-out;
     /* transition: color 0.3s;
     padding: 8px 12px;
     border-radius: 4px;
     position: relative; */
+}
+.header .nav-menu .nav-list .nav-item .nav-link:hover {
+   color: var(--dull-color);
 }
 .header.scrolled .nav-menu .nav-list .nav-item .nav-link{
    color: var(--dark-color);
@@ -230,11 +238,18 @@ header {
     top: 20px;
     right: 20px;
 }
-
+.category-header {
+    position: relative;
+    background-color:var(--white-color); /* Red background for Category page */
+    padding:0;
+  }
+.category-header .nav-link{
+  color: var(--dark-color) !important;
+}
 
 @media screen and (max-width:1199.5px) {
     .header .header-container {
-        padding: 8px 23px;
+        padding: 6px 23px;
 }
 .header .nav-menu .nav-list .nav-item .nav-link {
     padding: 0 10px;

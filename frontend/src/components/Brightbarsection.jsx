@@ -11,45 +11,47 @@ const BrightBarssection = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Default slides to show
+    slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,  // Enable autoplay
-    autoplaySpeed: 6000,  // Time interval between slides (in ms)
-    centerMode: false, // Disables center mode
+    autoplay: true,
+    autoplaySpeed: 6000,
+    centerMode: true, // Enables center mode
+    centerPadding: '10px', // Adjust padding around center slides
     responsive: [
       {
-        breakpoint: 1200, // Screens below 1200px
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1024, // Screens below 1024px
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 992, // Screens below 992px
+        breakpoint: 768,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768, // Screens below 768px
+        breakpoint: 480,
         settings: {
-          slidesToShow: 2, // Use integers for stable behavior
+          slidesToShow: 1,
           slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 430, // Screens below 430px
-        settings: {
-          slidesToShow:1, // Properly display one item
-          slidesToScroll: 1,
+          margin:20
         },
       },
     ],
@@ -71,21 +73,20 @@ const BrightBarssection = () => {
         <div className="row">
           {/* left part */}
           <div className="col-lg-7">
-            <h4 className="secondery-title text-white">
+            <h4 className="ternery-title">
               <span>
-                <img src="/images/sideimg.png" alt="title img" className="px-1" height={20} width={30} />
+                <img src="images/titleimg.png" alt="title img" className="px-1" height={20} width={30} />
               </span>
               Ready to perform products
             </h4>
             <div className="main-text-box">
-              <video autoPlay muted loop>
-                {/* Ensure correct path relative to the public folder */}
-                <source src="/video/bg3.mp4" type="video/mp4" />
+              {/* <video autoPlay muted loop>
+                 <source src="/video/bg3.mp4" type="video/mp4" />
                 <source src="/video/bg3.webm" type="video/webm" />
                 <source src="/video/bg3.ogv" type="video/ogg" />
                 Your browser does not support the video tag.
-              </video>
-              <h2 className="main-title">Black Bars</h2>
+              </video> */}
+              <h2 className="main-title">A Showcase of Our Products</h2>
             </div>
           </div>
 
@@ -122,8 +123,8 @@ const BrightBarssection = () => {
                         />
                       </div>
                       <p>{product.description}</p>
-                      <a href={product.link} className="readmore-btn my-2">
-                        Read More
+                      <a href={product.link} className="readmore-btn my-2 d-flex align-items-center">
+                        Read More <span><FaArrowRight /></span>
                       </a>
                     </div>
                   ))}

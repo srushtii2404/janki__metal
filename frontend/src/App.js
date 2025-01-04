@@ -17,6 +17,7 @@ import Thankyou from './pages/Thankyou';
 import HexBar from './pages/HexBar';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Category } from './pages/Category.jsx';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
         <Route path='/thankyoupage' element={<Thankyou />} />
         <Route path='/hexbar' element={<HexBar/>}/>
         <Route path='*' element={<Error />} />
+        <Route path='/category' element={<Category/>}/>
+  
       </Routes>
       <Footer/>
 

@@ -67,19 +67,19 @@ body.blur {
 .main-text-box
 {
   position: relative;
-  height: 106px;
+  /* height: 106px; */
   background-clip: border-box;
   overflow: hidden;
   background:transparent;
   margin: 0 20px;
-  width: 701px;
+  /* width: 701px; */
 }
 .main-text-box video {
   position: absolute;
   object-fit: cover;
   width: 677px;
 }
-  .main-title{
+  /* .main-title{
     position: absolute;
     top: 0;
     left: 0;
@@ -92,12 +92,16 @@ body.blur {
     font-size: 7vw;
     mix-blend-mode: multiply;
    font-weight: 600;
-  }
+  } */
   .secondery-title{
     font-size: 20px;
     font-weight:800;
     color: var(--primary-color);
     position: relative;
+  }
+  .ternery-title{
+    font-size: 20px;
+    color: var(--primary-color);
   }
   @media screen and (max-width:575px) {
     .secondery-title {
@@ -152,6 +156,8 @@ body.blur {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--dark-color);
+  cursor: pointer;
+  gap: 6px;
   font-weight: 600;
   display: inline-block; /* Ensure it's treated like a block for smooth transformation */
   transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth effect */

@@ -21,7 +21,7 @@ const Home = () => {
             <div className="carousel-item">
               <div className='img-container-box'>
                 <div className='img-inner-box'>
-                  <img src="/images/banner3.jpg" className="d-block w-100" alt="..." />
+                  <img src="/images/slide2.webp" className="d-block w-100" alt="..." />
                 </div>
               </div>
               <div class="slider-content">
@@ -29,10 +29,22 @@ const Home = () => {
                 <p class="caresoule-content">Stainless Steel</p>
               </div>
             </div>
-            <div className="carousel-item">
+            {/* <div className="carousel-item">
               <div className='img-container-box'>
                 <div className='img-inner-box'>
                   <img src="/images/banner4.webp" className="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <div class="slider-content">
+                <h1 class="caresoule-title"><span class="break-word">Discover</span> Right Steel</h1>
+                <p class="caresoule-content">Stainless Steel</p>
+              </div>
+            
+            </div> */}
+            <div className="carousel-item">
+              <div className='img-container-box'>
+                <div className='img-inner-box'>
+                  <img src="/images/slde3.webp" className="d-block w-100" alt="..." />
                 </div>
               </div>
               <div class="slider-content">
@@ -44,7 +56,7 @@ const Home = () => {
             <div className="carousel-item">
               <div className='img-container-box'>
                 <div className='img-inner-box'>
-                  <img src="/images/banner5.jpg" className="d-block w-100" alt="..." />
+                  <img src="/images/slide4.webp" className="d-block w-100" alt="..." />
                 </div>
               </div>
               <div class="slider-content">

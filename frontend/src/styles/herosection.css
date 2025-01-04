@@ -2,15 +2,15 @@
     position: relative;
 }
 .hero-section:before{
-    position: absolute;
-    top: 0;
-    content: "";
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #400000;
-    z-index: 1;
-    opacity: 0.5;
+  position: absolute;
+  top: 0;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+ background: Linear-gradient(188deg, #000000 0%, #222222 100%);
+  z-index: 1;
+  opacity: 0.8;
 }
 .hero-section .img-container-box{
     padding-bottom: 740px;
@@ -150,7 +150,7 @@
 
   @media screen and (max-width:1199px) {
     .hero-section .img-container-box {
-        padding-bottom: 690px;
+        padding-bottom: 500px;
     }  
     .hero-section .slider-content .caresoule-title {
         font-size: 74px;
