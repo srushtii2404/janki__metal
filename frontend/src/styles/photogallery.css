@@ -279,3 +279,31 @@ position: absolute;
     align-Items: center;
     z-index: 1000;
 }
+@media screen and (max-width:575px) {
+    .gallery-section .img-container {
+        max-width: 162px;
+        height: 140px;
+    }    
+    .gallery-section .img-container {
+        max-width: 162px;
+        height: 140px;
+    }    
+    .gallery-section .img-container img {
+        height: 158px;
+        width: 100%;
+    }
+    .gallery-section .gallery-title {
+        font-size: 31px;
+    }    
+}
+
+
+@media screen and (max-width: 430px) {
+    .gallery-section .img-container {
+        max-width: 142px;
+        height: 120px;
+    }
+    .gallery {
+        padding: 10px 0;
+    }
+}

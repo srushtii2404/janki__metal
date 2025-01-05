@@ -148,17 +148,17 @@
     transition: 0.5s all ease-in-out;
   }
 
-  @media screen and (max-width:1199px) {
-    .hero-section .img-container-box {
-        padding-bottom: 500px;
-    }  
+  @media screen and (max-width:1200px) {
     .hero-section .slider-content .caresoule-title {
         font-size: 74px;
+    }  
+    .hero-section .img-container-box {
+      padding-bottom: 630px;
     }  
   }
   @media screen and (max-width:991px) {
     .hero-section .img-container-box {
-        padding-bottom:515px;
+        padding-bottom:464px;
     }    
     .hero-section .slider-content .caresoule-title {
         font-size: 63px;
@@ -181,10 +181,14 @@
         padding-bottom: 316px;
     }
         .hero-section .slider-content .caresoule-title {
-            font-size: 30px;
+          font-size: 27px;
+          font-weight: 400;
         }
         .hero-section .slider-content .caresoule-content {
             font-size: 20px;
             margin-top: 9px;
         }
+        .About-section .text-contente {
+          font-size: 14px;
+      }
 }

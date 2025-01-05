@@ -2,7 +2,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdPhone, MdEmail } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { RiDownload2Line } from "react-icons/ri";
-
+import { GiWaterTower } from "react-icons/gi";
 export const footerData = {
     socialLinks: [
         { to: "https://www.facebook.com", icon: <FaFacebook size={22} /> },
@@ -14,7 +14,12 @@ export const footerData = {
         {
             id: "janki",
             title: "JANKI METAL",
-            content: (
+            icon:  (
+                <p>
+                    <GiWaterTower size={18} />
+                </p>
+            ),
+                        content: (
                 <p>
                     <RiDownload2Line size={18} /> Download Catalogue
                 </p>

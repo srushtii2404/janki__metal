@@ -54,7 +54,13 @@ const Header = () => {
 
                     {/* Navigation Menu */}
                     <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+
                         <ul className="nav-list">
+                        <li className="nav-item responcive-logo-view">
+                            <h1 className="logo-text logo-header">
+                               <img src="images/jankimetallogo.png" alt="company-logo" /> 
+                            </h1>
+                        </li>
                             <li className="nav-item">
                                 <Link to="/aboutus" className="nav-link">About us</Link>
                             </li>

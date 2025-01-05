@@ -3,6 +3,7 @@
     /* background-color: #f3f5f2; */
     padding: 80px 0;
     position: relative;
+    overflow-x: hidden !important;
  }
  .slick-slide {
    margin: 0 10px; /* Add space between slides */
