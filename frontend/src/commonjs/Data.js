@@ -3,6 +3,7 @@ import { MdPhone, MdEmail } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { RiDownload2Line } from "react-icons/ri";
 import { GiWaterTower } from "react-icons/gi";
+import { FaFacebookF } from "react-icons/fa";
 export const footerData = {
     socialLinks: [
         { to: "https://www.facebook.com", icon: <FaFacebook size={22} /> },
@@ -50,39 +51,43 @@ export const footerData = {
             title: "REACH OUT TO US",
             content: (
                 <>
-                    <li className="reach">
-                        <IoLocationSharp size={18} />{" "}
-                        <a href="https://maps.app.goo.gl/V1w97GSXwYafsSwz8" target="_blank" rel="noreferrer">
+                    <li className="reach d-flex">
+                         <span className="me-1"><IoLocationSharp size={18} />{" "}</span>
+                        <span><a href="https://maps.app.goo.gl/V1w97GSXwYafsSwz8" target="_blank" rel="noreferrer">
                             Janki Metal Strips Pvt Ltd, B-703, Solitaire Corporate Park, SG Highway, Ahmedabad-380015.
                         </a>
+                        </span>
                     </li>
                     <li className="reach">
-                        <MdPhone size={18} /> <a href="tel:+919558102221">+91 9558102221</a>
+                    <span className="me-1"><MdPhone size={18} /></span>
+                    <span><a href="tel:+919558102221">+91 9558102221</a></span>
                     </li>
                     <li className="reach">
-                        <MdEmail size={18} /> <a href="mailto:jankimstrips@gmail.com">jankimstrips@gmail.com</a>
+                    <span className="me-2"> <MdEmail size={18} /></span>
+                    <span><a href="mailto:jankimstrips@gmail.com">jankimstrips@gmail.com</a></span>
                     </li>
 
-                    <h6 className="follow">Follow Us on Social-Media</h6>
+                    <h6 className="follow mb-3">Follow Us on Social-Media</h6>
 
                     <div className="li-container d-flex gap-3">
-                        <li>
-                            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-                                <FaFacebook size="18px" />
+                        <li className="social-media-link">
+                            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="bb">
+                                {/* <FaFacebook size="18px" /> */}
+                                <FaFacebookF size="22" />
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+                        <li  className="social-media-link">
+                            <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="bb">
                                 <FaInstagram size="18px" />
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                        <li className="social-media-link">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="bb">
                                 <FaLinkedin size="18px" />
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+                        <li className="social-media-link">
+                            <a href="https://www.twitter.com" target="_blank" rel="noreferrer" className="bb">
                                 <FaTwitter size="18px" />
                             </a>
                         </li>

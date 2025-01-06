@@ -54,7 +54,7 @@ const Footer = () => {
                                 {section.links
                                     ? section.links.map((link, idx) => (
                                         <li key={idx}>
-                                            <Link className="text-light text-decoration-none" to={link.to}>
+                                            <Link className="text-decoration-none" to={link.to}>
                                                 {link.label}
                                             </Link>
                                         </li>

@@ -64,7 +64,7 @@ export const Videosection = () => {
   }, []);
 
   return (
-    <section className="mt-3 video-section">
+    <section className="mt-lg-3 mt-md-2 mt-sm-1 mt-0 video-section">
       <div className="container-fluid p-0">
         <div className="video-section-container">
           <div className="video-header px-3">
