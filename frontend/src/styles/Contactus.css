@@ -7,11 +7,12 @@
 /* Banner Section */
 .contactus-container .banner {
   position: relative;
-  height: 120vh;
+  /* min-height: 130vh; */
   display: flex;
+   padding: 175px 0;
   align-items: center;
   justify-content: center;
-  background-image: url('https://img.freepik.com/premium-photo/high-angle-view-business-people-shaking-hands-office_1048944-5615412.jpg?w=826');
+  background-image: url('../../public/images/contact-backound.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -19,42 +20,77 @@
 
 .contactus-container .banner::after {
   content: '';
-  position: absolute;
+  position: absolute; 
   top: -50px;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(59, 30, 1, 0.7);
+  background:#000000d6;
   z-index: 1;
 }
 
 /* Form Section */
 .form-container {
   position: absolute;
-  top: 20%;
   transform: translateY(-50%);
+  color: var(--white-color);
+  position: relative;
   z-index: 2;
-  width: 100%;
-  max-width: 700px;
-  color: white;
 }
 
-form {
-  backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.108);
+.contactus-container form {
+  /* backdrop-filter: blur(1px); */
+  background: rgb(10 5 0 / 33%);
   border-radius: 10px;
+  opacity: 1;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  padding: 30px;
+  padding: 38px 30px;
 }
 
-.head {
+.contactus-container .head {
   font-size: 34px;
-  font-weight: bold;
-  color: #1e0202;
-  text-align: center;
+  font-weight: 400;
+  color: var(--white-color);
   margin-bottom: 30px;
 }
-
+.contactus-container .content-box{
+  z-index: 9;
+  position: relative;
+}
+.contactus-container .contact-heading{
+  color:#d4d4d4;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contactus-container .sub-content{
+  color: var(--white-color);
+  font-size: 45px;
+  padding: 10px 0;
+  font-weight: 400;
+  color: var(--white-color);
+}
+.contactus-container .sub-text{
+  color: #d4d4d4;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.contactus-container .map-section .map-view{
+  width: 100%; 
+  height: 312px;
+  margin: 20px 0;
+position: relative;
+z-index: 9;
+}
+/* .contactus-container .map-section .map-view::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000007b;
+  
+} */
 .reachout-head{
   font-size: 34px;
   font-weight: bold;
@@ -68,23 +104,24 @@ form {
   font-size:50px;
 }
 
-.input-field,
-.textarea-field {
-  background: rgba(255, 255, 255, 0.15);
+.contactus-container .input-field,
+.contactus-container .textarea-field {
+  background: rgb(235 235 235 / 15%);
   color: #fff;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 15px;
   border: none;
   border-radius: 5px;
   resize: none;
   text-wrap: wrap;
+  font-size: 18px;
 }
 
-.input-field::placeholder,
-.textarea-field::placeholder {
+.contactus-container .input-field::placeholder,
+.contactus-container .textarea-field::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .submit {
@@ -150,17 +187,27 @@ form {
 }
 
 /* Media Queries for Responsiveness */
+@media screen and (max-width:992px) {
+  .contactus-container .sub-content {
+    font-size: 39px;
+  }
+  .contactus-container .sub-text {
+    font-size: 14px;
+  }
+}
 @media (max-width: 768px) {
   .form-container {
     width: 90%;
   }
-
-  .contactus-container .banner {
-    height: 100vh;
-  }
-
   .head {
     font-size: 20px;
+  }
+  .content-box{
+    display: none;
+  }
+  .contactus-container .banner {
+    padding-top: 137px;
+    padding-bottom: 20px;
   }
 
   .form-group-row {
@@ -175,15 +222,28 @@ form {
     right: 0;
     padding: 10px;
   }
-
-  .contactus-container .banner {
-    height: 80vh;
+   .reachout-head {
+    font-size: 28px;
   }
-
-  .submit {
+  .submit { 
     padding: 10px;
     font-size: 14px;
+  }   
+ .contactus-container .banner {
+    padding-top: 28px;
   }
+  .contactus-container .banner::after {
+    top: 0;
+  }
+  .contactus-container .head {
+    font-size: 26px;
+  }
+  .contactus-container .input-field, .contactus-container .textarea-field {
+    padding: 11px;
+  }
+  .contactus-container form {
+    padding: 28px 20px;
+}
 
   .content {
     font-size: 1.1rem;
