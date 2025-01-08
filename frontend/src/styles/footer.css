@@ -1,10 +1,6 @@
 .footer {
     position: relative;
     background: url('https://img.freepik.com/free-photo/steel-bars-welded-together-industrial-setting_157027-4245.jpg?t=st=1735735442~exp=1735739042~hmac=faaa1d9d48b66ea62b999bef9827e6cbf5c6d44e728ac4eaca5b6f95d7867cca&w=1060') no-repeat center/cover;
-    color: #f8f9fa;
-    padding: 2rem 0;
-    font-size: 14px;
-    background-position: center;
 }
 
 .footer::after {
@@ -28,22 +24,39 @@
     gap: 1rem;
     flex-direction: column;
 }
-
-.footer h5 {
-    font-size: 18px;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
+.footer .icon-box .icon{ 
+  padding: 5px;
+    border: 1px solid white;
+    border-radius: 40px;
+    font-size: 4px;
+    color: white;
+    margin-right: 5px;
 }
-
+.footer .footer-title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+.footer .footer-title::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 44px;
+    background-color: #dcdcdc4a;
+    display: block;
+    bottom: -5px;
+}
 .footer ul {
     padding: 0;
     list-style: none;
 }
 
 .footer ul li {
-    margin-bottom: 1.4rem;
+    margin-bottom: 11px;
 }
 
 .footer ul li:last-child {
@@ -55,9 +68,9 @@
 }
 
 .footer a {
-    color: #f8f9fa;
+    color: var(--dull-white);
     text-decoration: none;
-    font-size: 13.5px;
+    font-size: 16px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -66,10 +79,11 @@
 }
 
 .footer h6.follow{
-    font-size: 13.5px;
-    margin-top: 30px;
-}
-
+        font-size: 20px;
+        margin-top: 30px;
+        font-weight: 300;
+    }
+    
 
 .footer a:hover {
     color: var(--primary-color);
@@ -89,7 +103,8 @@
 
 .footer-dev h6 {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .footer-dev h6 a{
@@ -124,16 +139,22 @@
 
     .footer h5 {
         font-size: 14px;
-        border-bottom: 1px solid white;
+        border-bottom:1px solid #ffffff30;
         padding-bottom: 10px;
     }
 
     .footer ul li a {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .footer p {
-        font-size: 11px;
+        font-size: 15px;
+    }
+    .footer-dev h6 {
+        font-size: 19px;
+    }    
+    hr{
+        display: none;
     }
 
     .footer .social-links a {
@@ -143,11 +164,21 @@
     .footer-main-header .ml-2 {
         display: inline;
     }
-
+    .footer .footer-title {
+       margin-bottom: 5px;
+    }
     /* Ensure the background image adjusts for smaller screens */
     .footer {
         background-size: auto 100%; /* Set the image to auto width and full height */
         background-position: top center; /* Position the background at the top center */
+    }
+    .footer .footer-title::before {
+        display: none !important;
+        content: "";
+    }
+    .footer .footer-title {
+        font-weight: 400;
+        font-size: 16px;
     }
 }
 
@@ -155,4 +186,63 @@
     .footer-main-header .ml-2 {
         display: none;
     }
+  
 }
+
+.footer .social-media-link{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+   border: 1px solid var(--dull-white);
+   z-index: 1;
+}
+.footer .social-media-link .bb{
+    position: relative;
+    color: var(--dull-color);
+    transition: .7s all ease-in-out;
+    z-index: 3;
+  }
+  
+  .footer .social-media-link:hover .bb {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .footer .social-media-link:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .7s all ease-in-out;
+    z-index: 2;
+  }
+  
+  .footer .social-media-link:hover:before {
+    top: 0;
+  }
+  
+  .footer .social-media-link:nth-child(1):before{
+    background: #3b5999;
+  }
+  .footer .social-media-link:nth-child(2):before{
+    background: #bf2b64;
+  }
+  .footer .social-media-link:nth-child(3):before{
+    background: #0077b5;
+  }
+  
+  .footer .social-media-link:nth-child(4):before{
+    background: #45a4e1;
+  }
+  
+/* .footer .social-media-link:nth-child(1){
+    background: #3b5999;
+} */

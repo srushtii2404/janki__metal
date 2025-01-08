@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { footerData } from "../commonjs/Data";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { GiWaterTower } from "react-icons/gi";
 
 const Footer = () => {
     const [openSections, setOpenSections] = useState({
@@ -38,7 +39,7 @@ const Footer = () => {
                     {footerData.sections.map((section) => (
                         <div key={section.id} className="col-lg-3 col-md-6 col-sm-12 mb-4">
                             <h5
-                                className={`footer-main-header ${openSections[section.id] ? "active" : ""}`}
+                                className={`footer-title footer-main-header ${openSections[section.id] ? "active" : ""}`}
                                 onClick={() => isMobile && toggleSection(section.id)} // Only toggle on mobile
                             >
                                 {section.title}
@@ -53,7 +54,7 @@ const Footer = () => {
                                 {section.links
                                     ? section.links.map((link, idx) => (
                                         <li key={idx}>
-                                            <Link className="text-light text-decoration-none" to={link.to}>
+                                            <Link className="text-decoration-none" to={link.to}>
                                                 {link.label}
                                             </Link>
                                         </li>

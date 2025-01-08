@@ -39,6 +39,7 @@ header {
             box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .05), 0 1.5rem 2.2rem rgba(0, 0, 0, .1) !important;
             backdrop-filter: saturate(180%) blur(20px);
             background: rgba(247, 247, 247, 0.9) !important;
+            border-bottom: 0;
         } 
 
 .logo-header{
@@ -231,7 +232,14 @@ max-width: 145px;
     position: absolute;
     top: 20px;
     right: 20px;
+    background-color: #742d19;
+    border-radius: 40px;
+    /* padding: 10px 10px; */
+    color: var(--white-color);
+    height: 40px;
+    width: 40px;
 }
+
 .category-header {
     position: relative;
     background-color:var(--white-color); /* Red background for Category page */
@@ -240,7 +248,9 @@ max-width: 145px;
 .category-header .nav-link{
   color: var(--dark-color) !important;
 }
-
+.responcive-logo-view{
+    display: none !important;
+}
 @media screen and (max-width:1199.5px) {
     .header .header-container {
         padding: 6px 23px;
@@ -248,12 +258,12 @@ max-width: 145px;
 .header .nav-menu .nav-list .nav-item .nav-link {
     padding: 0 10px;
 }
-.header .nav-menu .nav-list
-{
-    gap: 0;
+.responcive-logo-view{
+    display: block !important;
+    padding: 15px 20px !important;
 }
-.header .nav-menu {
-    gap: 0;
+.header .nav-menu .nav-list {
+    gap: 4px;
 }
 }
 
@@ -271,10 +281,10 @@ max-width: 145px;
     .nav-menu {
         display: none;
         position: fixed;
-        top: 69px;
         right: -100%; 
-        height: 100%;
+        height: 100vh;
         width: 250px;
+        top: 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         z-index: 999;
     }
@@ -299,27 +309,27 @@ max-width: 145px;
     } */
 
     .header .nav-menu.open {
-        display: flex; 
-        position:fixed;
+        display: flex;
+        position: fixed;
         z-index: 1100;
         flex-direction: column;
         justify-content: flex-start;
-         position: absolute;
-        top: 0; 
+        top: 0;
         right: 0;
-        background-color:var(--white-color);
+        background-color: var(--white-color);
         width: 300px;
-        height: 100vh;
-        z-index: 999999999;
+        height: 200vh;
         color: var(--dark-color);
         transition: 0.5s all ease-in-out;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow-y: scroll;
+        overflow-x: hidden; 
     }
     /*after scroll added*/
-    .header.scrolled  .nav-menu.open {
+    /* .header.scrolled  .nav-menu.open {
         top: -20px;
         right: -38px;
-    }
+    } */
     .header .nav-menu.open .nav-item .nav-link{
         color: var(--dark-color) !important;
     }
@@ -330,7 +340,13 @@ max-width: 145px;
     }
     .header .nav-menu .nav-list .nav-item {
         border-bottom: 2px solid #8a787321;
-        padding: 17px 0;
+        padding: 14px 0;
+    }
+    .header .nav-menu .nav-list .nav-item:nth-child(2) {
+        border-top: 2px solid #8a787321; /* Semi-transparent border */
+    }
+    .header .nav-menu .nav-list .nav-item:nth-child(1) {
+        border-bottom: 0;
     }
     .responcive-logo{
       display: block;  
@@ -354,7 +370,7 @@ max-width: 145px;
     .header.scrolled {
         position: fixed;
         top: 20px;
-        padding: 10px 0;
+        padding: 19px 0 10px 0;
         transition: 0.5s all ease-in-out;
         animation-name: slideInDown;
         width: 100%;
@@ -363,12 +379,13 @@ max-width: 145px;
         top: 0;
         border-radius: 0;
     }
-    .header.scrolled  .nav-menu.open {
+    /* .header.scrolled  .nav-menu.open {
         top: 0;
         right: -38px;
-    }
+    } */
 }
 @media screen and (max-width:575px) {
+    
     .header {
         position: sticky;
         top: 0;
@@ -382,11 +399,22 @@ max-width: 145px;
     .header .header-container {
         padding: 0 11px;
     }
-
+    .mobile-logo{
+             max-width: 100px;
+       }
+       .responcive-logo-view {
+         max-width: 150px;   
+    }
+    .header .nav-menu .nav-list .nav-item {
+        padding: 11px 0;
+    }
+    .header .nav-menu .nav-list .nav-item .nav-link {
+        font-size: 15px;
+    }    
 }
 
 @media screen and (max-width:440px) {
     .hero-section .img-container-box {
-        padding-bottom: 200px !important;
+        padding-bottom: 238px !important;
     }
 }

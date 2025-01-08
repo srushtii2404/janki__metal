@@ -107,38 +107,16 @@ export const Gallerysection = () => {
             </button>
             <div
               className="controls"
-              style={{
-                position: "absolute",
-                display: "flex",
-                justifyContent: "space-between",
-                width: "90%",
-                top: "50%",
-                transform: "translateY(-50%)",
-              }}
             >
               <button
                 className="prev"
                 onClick={showPrevImage}
-                style={{
-                  background: "none",
-                  border: "none",
-                  fontSize: "24px",
-                  color: "#fff",
-                  cursor: "pointer",
-                }}
               >
                 <i className="fa-solid fa-arrow-left"></i>
               </button>
               <button
                 className="next"
                 onClick={showNextImage}
-                style={{
-                  background: "none",
-                  border: "none",
-                  fontSize: "24px",
-                  color: "#fff",
-                  cursor: "pointer",
-                }}
               >
                 <i className="fa-solid fa-arrow-right"></i>
               </button>
