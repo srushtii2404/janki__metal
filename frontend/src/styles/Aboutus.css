@@ -477,28 +477,91 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  
+  .leadership-cards .img-container{
+     max-width: 400px;
+  }
+  .leadership-cards .img-container img{
+    height: 100%;
+    width: 100%;
+  }
   .leadership-card {
-    width: 250px;
+    width: 360px;
     padding: 20px;
     background: #f7f7f7;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
-  
+  .leadership-card .team-content{
+    width: 100%;
+    background:var(--dark-txt);
+    color: #fff;
+    padding: 30px 0 10px 0;
+    position: absolute;
+    bottom: 0;
+    margin-top: 100px;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+  }
+  .leadership-card .team-content::before{
+    content: "";
+    width: 70%;
+    height: 49px;
+    left: -9px;
+    background:var(--dark-txt);
+    position: absolute;
+    top: -18px;
+    transform: rotate(14deg);
+    z-index: -1;
+  }
+  .leadership-card .team-content::after{
+    content: "";
+    width: 82%;
+    height: 48px;
+    background:var(--dark-txt);
+    position: absolute;
+    top: -11px;
+    transform: rotate(-15deg);
+    z-index: -1;
+    right: -17px;
+  }
   .leadership-card:hover {
     transform: translateY(-10px);
   }
   
+ .leadership-card .leader-name::before{
+    content: "";
+    width: 39px;
+    height: 150px;
+    background: var(--light-color);
+    position: absolute;
+    top: -80px;
+    z-index: -2;
+    transform: rotate(284deg);
+
+ }
+ .leadership-card .leader-name::after{
+    content: "";
+    width: 46px;
+    height: 158px;
+    background: var(--light-color);
+    position: absolute;
+    top: -80px;
+    z-index: -2;
+    right: 25%;
+    transform: rotate(74deg);
+ }
   .leadership-image {
     width: 100%;
     /* border-radius: 50%; */
-    margin-bottom: 15px;
-    height: auto;
-  }
-  
+    margin-bottom: 99px;
+    height: 226px;
+    position: relative;
+  } 
   .leadership-card h3 {
     font-size: 1.2rem;
     font-weight: bold;

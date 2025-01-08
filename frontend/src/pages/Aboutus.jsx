@@ -120,8 +120,10 @@ const calculateLineWidth = (year) => {
           {leadershipData.map((leader, index) => (
             <div className="leadership-card" key={index}>
               <img src={leader.imgSrc} alt={leader.name} className="leadership-image" />
-              <h3>{leader.name}</h3>
+              <div className="team-content">
+              <h3 className="leader-name">{leader.name}</h3>
               <p>{leader.position}</p>
+              </div>
             </div>
           ))}
         </div>
