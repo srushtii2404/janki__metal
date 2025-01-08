@@ -97,3 +97,66 @@ export const footerData = {
         },
     ],
 };
+
+
+// data.js
+
+export const aboutus = {
+    carouselData: [
+        {
+            imgSrc: "https://img.freepik.com/free-photo/factory-worker-protective-uniform-hardhat-operating-industrial-machine-production-line_342744-218.jpg?uid=R105870901&ga=GA1.1.79573969.1735278794&semt=ais_hybrid",
+            title: "Metal Masters",
+            subtitle: "Metallogenuity"
+        },
+        {
+            imgSrc: "https://img.freepik.com/free-photo/portrait-young-worker-hard-hat-large-metalworking-plant_146671-19572.jpg?uid=R105870901&ga=GA1.1.79573969.1735278794&semt=ais_hybrid",
+            title: "Metal Masters",
+            subtitle: "Metallogenuity"
+        },
+        {
+            imgSrc: "https://img.freepik.com/premium-photo/rear-view-two-young-men-uniform-discussing-quality-new-equipment_274679-37753.jpg?uid=R105870901&ga=GA1.1.79573969.1735278794&semt=ais_hybrid",
+            title: "Metal Masters",
+            subtitle: "Metallogenuity"
+        },
+        {
+            imgSrc: "https://img.freepik.com/free-photo/man-spraying-powder-paint-from-gun-full-shot_23-2149878748.jpg?uid=R105870901&ga=GA1.1.79573969.1735278794&semt=ais_hybrid",
+            title: "Metal Masters",
+            subtitle: "Metallogenuity"
+        },
+    ],
+
+    timeline: {
+        years: [2019, 2020, 2021, 2022, 2023],
+        content: {
+            2019: "This is the content for the year 2019.",
+            2020: "This is the content for the year 2020.",
+            2021: "This is the content for the year 2021.",
+            2022: "This is the content for the year 2022.",
+            2023: "This is the content for the year 2023."
+        }
+    },
+
+    leadership: [
+        {
+            name: "Mr Vinaye Jain",
+            position: "CEO",
+            imgSrc: "https://t4.ftcdn.net/jpg/03/25/73/59/360_F_325735908_TkxHU7okor9CTWHBhkGfdRumONWfIDEb.jpg",
+            details: "Vinaye Jain is a visionary leader with over 20 years of experience in the steel and metal industry.",
+        },
+        {
+            name: "Mr Raman Poddar",
+            position: "CTO",
+            imgSrc: "https://t4.ftcdn.net/jpg/03/25/73/59/360_F_325735908_TkxHU7okor9CTWHBhkGfdRumONWfIDEb.jpg",
+            details: "Raman Poddar specializes in technological innovation and has spearheaded multiple successful projects.",
+        },
+        {
+            name: "Mr Jivansh Jain",
+            position: "COO",
+            imgSrc: "https://t4.ftcdn.net/jpg/03/25/73/59/360_F_325735908_TkxHU7okor9CTWHBhkGfdRumONWfIDEb.jpg",
+            details: "Jivansh Jain is known for his operational excellence and strategic planning in scaling businesses.",
+        },
+    ],
+
+    
+};
+

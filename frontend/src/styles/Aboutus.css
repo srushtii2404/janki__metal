@@ -1,194 +1,70 @@
-.mission-section {
-    background-color: #131131;
-    padding: 2rem;
-}
-
-.mission-heading {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-}
-
-.mission-icon {
-    color: var(--primary-color, #ff6600);
-    display: flex;
-    align-items: center;
-}
-
-.mission-icons-content {
-    font-weight: 600;
-    color: white;
-    font-size: 1.2rem;
-}
-
-.mission-details {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: white;
-    text-align: left;
-}
-
-.breaf-content-heading {
-    font-size: 35px;
-    font-weight: 400;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.breaf-content-details p {
-    font-size: 20px;
-    font-weight: 300;
-    text-align: justify;
-    color: grey;
-    padding-top: 10px;
-}
-
-.mission-item {
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: flex-start;
-    max-width: 100%;
-}
-
-.mission-title {
-    font-size: 25px;
-}
-
-.mission-text {
-    font-size: 15px;
-    color: white;
-    line-height: 1.5;
-}
-
-.mission-main {
-    color: white;
-    font-size: 30px;
-    display: flex;
-    align-items: flex-start;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    .mission-heading {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .mission-icons-content {
-        font-size: 1.1rem;
-        margin-top: 0.5rem;
-    }
-
-    .mission-details {
-        font-size: 0.9rem;
-    }
-
-    .breaf-content-heading {
-        font-size: 1.5rem;
-    }
-
-    .breaf-content-details p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .mission-section {
-        padding: 1.5rem 1rem;
-    }
-
-    .mission-heading {
-        gap: 1rem;
-    }
-
-    .mission-icons-content {
-        font-size: 1rem;
-    }
-
-    .mission-details {
-        font-size: 0.85rem;
-    }
-
-    .breaf-content-heading {
-        font-size: 1.25rem;
-    }
-
-    .breaf-content-details p {
-        font-size: 0.95rem;
-    }
-}
-
-/* Timeline Section Styles */
-
-
 .timeline {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 0px 180px;
 }
 
 .timeline-item {
-    padding: 15px 25px;
-    border-radius: 50%;
-    margin: 15px;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.3s ease;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.timeline-item:hover {
-    z-index: 2;
+  padding: 10px;
+  border-radius: 50%;
+  margin: -10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timeline-year {
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 20px;
-    border: 3px solid #ff6f61;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  border: 3px solid #ff6f61;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  color: #4a4949;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
 }
 
 .year-text {
-    font-size: 16px;
-    color: #666;
-    margin-top: 10px;
-    position: absolute;
-    bottom: -43px;
+  font-size: 18   px;
+  color: #666;
+  margin-top: 10px;
+  position: absolute;
+  bottom: -43px;
 }
 
 .timeline-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 50px auto;
-    transition: all 0.3s ease;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 50px auto;
+  transition: all 0.3s ease;
+  text-align: justify;
 }
 
 .timeline-content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #ff6f61;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff6f61;
 }
 
 .timeline-content p {
-    font-size: 16px;
-    color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
 }
 
 /* Responsive Timeline */
@@ -216,26 +92,30 @@
     }
 }
 
-/* Leadership Section Styles */
-.leadership-section {
-    background-color: #f8f9fa;
-    padding: 5rem 2rem;
-    text-align: center;
+
+.timeline-item:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.timeline-item p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .timeline-details h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color:var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 .timeline-details p {
-    font-size: 1rem;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
+  font-size: 1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .leader-data {
@@ -307,26 +187,26 @@
 
 /* Timeline Line */
 .timeline-line {
-    position: relative;
-    top: 50%;
-    height: 1px;
-    width: 100%;
-    background-color: #e0e0e0; /* Light grey background for the line */
-    margin: 20px auto;
-    border-radius: 50px; /* Makes the line rounded */
-    overflow: hidden;
+  position: relative;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background-color: #e0e0e0; /* Light grey background for the line */
+  margin: 20px auto;
+  border-radius: 50px; /* Makes the line rounded */
+  overflow: hidden;
 }
 
 .progress-line {
-    position: absolute;
-    height: 5px; /* Matching the height of the base line */
-    width: 0; /* Initially set to 0, will expand dynamically */
-    background: var(--primary-color); /* Gradient effect for the line */
-    border-radius: 50px; /* Ensures the line has smooth rounded ends */
-    transition: width 0.5s linear; /* Smooth animation when width changes */
-    z-index: 0; /* Keeps it above the base line */
-    left: 0;
-    top: 0; 
+  position: absolute;
+  height: 5px; /* Matching the height of the base line */
+  width: 0; /* Initially set to 0, will expand dynamically */
+  background: var(--primary-color); /* Gradient effect for the line */
+  border-radius: 50px; /* Ensures the line has smooth rounded ends */
+  transition: width 0.5s linear; /* Smooth animation when width changes */
+  z-index: 0; /* Keeps it above the base line */
+  left: 0;
+  top: 0; 
 }
 @media screen and (max-width:575px) {
     .timeline-item {
@@ -409,64 +289,68 @@
     flex-wrap: wrap;
     padding: 10px;
   }
-  
+
   .timeline-item {
-    text-align: center;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.5s linear;
+      padding: 12px 18px;
+      margin: 25px 0;
   }
-  
-  .timeline-item:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+
+  .timeline-year {
+      font-size: 18px;
   }
-  
-  .timeline-item p {
-    margin-top: 5px;
-    font-size: 14px;
-    font-weight: 500;
+
+  .year-text {
+      font-size: 12px;
   }
-  
-  /* Content for the selected year */
+
+  .timeline-details h3 {
+      font-size: 1.75rem;
+  }
+
+  .timeline-details p {
+      font-size: 0.95rem;
+  }
+
+
+
+/* Responsive Timeline for screens smaller than 460px */
+@media (max-width: 920px) {
+  .timeline {
+      padding: 10px; /* Reduce padding around the timeline */
+  }
+
+  .timeline-item {
+      padding: 10px 7px; /* Reduce padding on each timeline item */
+      margin: 10px 0; /* Reduce margin between items */
+  }
+
+  .timeline-year {
+      font-size: 13px; /* Smaller font size for the year */
+      width: 40px; /* Adjust width of the year circle */
+      height: 40px; /* Adjust height of the year circle */
+  }
+
   .timeline-content {
-    margin-top: 20px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      font-size: 10px; /* Smaller font size for content */
+      padding: 10px; /* Reduce padding for the content */
   }
-  
-  .timeline-content h3 {
-    margin-bottom: 10px;
+
+  .timeline-details h3 {
+      font-size: 1rem; /* Smaller font size for the heading */
   }
-  
-  .timeline-content p {
-    font-size: 16px;
-    line-height: 1.5;
+
+  .timeline-details p {
+      font-size: 0.7rem; /* Smaller text for details */
   }
-  
+
+  .progress-line {
+      height: 1px; /* Smaller progress line */
+  }
+}
 
 
+/* /////////////////////////////////////////////////////////   leader */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Leadership Section */
 .leadership-section {
     text-align: center;
     padding: 50px 0;
@@ -573,4 +457,433 @@
   }
   
 
-  
+
+
+
+.leadership-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color:var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.leadership-section p{
+  color: gray;
+}
+
+.leadership-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+  .leadership-card {
+  align-items: center;        
+  justify-content: space-around;
+  width: 300px;
+  padding: 20px;
+  background: #f9f8f8;
+  margin: 20px;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(28, 28, 28, 0.1);
+  transition: transform 0.3s ease, height 0.3s ease;
+  overflow: hidden;
+  height: 350px; /* Default height */
+  background-color:#f9f8f8;
+
+}
+
+.leadership-card.expanded {
+  height: auto; /* Automatically adjusts height */
+}
+
+.leadership-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;
+}
+
+.leadership-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(49, 44, 44);
+}
+
+.leadership-card p {
+  color: #555;
+}
+
+.details {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color:black;
+}
+
+.know-more{
+  color:var(--primary-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  background: none;
+}
+
+.vision-mission-values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-details {
+  text-align: center;
+}
+
+.value-details h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.value-details p{
+  color: gray;
+}
+
+.vision-mission-values-container h3 {
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+}
+
+.vision-mission-values-container p {
+  color: #ccc9c9;
+  margin-top: 10px;
+}
+
+.vision-box, .mission-box, .values-box {
+  padding: 35px 50px;
+  width: 100%; /* Make each box take full width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  background-color: #131131;
+}
+
+.m-icon {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .vision-box, .mission-box, .values-box {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+}
+
+.contributors-section{
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f8f8;
+}
+
+.contributors-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color:var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contributors-section p{
+  color: gray;
+  margin-bottom: 60px;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Default styles for larger screens */
+.timeline-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff6f61;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.timeline-details h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.timeline-details p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.leadership-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.leadership-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(49, 44, 44);
+}
+
+.leadership-card p {
+  color: #555;
+}
+/* Responsive font sizes for smaller screens */
+@media (max-width: 768px) {
+  .timeline-content h3 {
+      font-size: 20px; /* Smaller font size for smaller screens */
+  }
+
+  .timeline-content p {
+      font-size: 14px; /* Smaller font size */
+  }
+
+  .timeline-details h3 {
+      font-size: 2rem; /* Adjusted size */
+  }
+
+  .timeline-details p {
+      font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .leadership-section h2 {
+      font-size: 2rem; /* Adjust size */
+  }
+
+  .leadership-card h3 {
+      font-size: 1rem; /* Smaller size */
+  }
+
+  .leadership-card p {
+      font-size: 0.9rem; /* Smaller size */
+  }
+
+  .vision-mission-values h3 {
+      font-size: 1.4rem; /* Reduced size */
+  }
+
+  .vision-mission-values p {
+      font-size: 0.9rem; /* Reduced font size */
+  }
+
+  .contributors-section h2 {
+      font-size: 2rem; /* Reduced font size */
+  }
+
+  .contributors-section p {
+      font-size: 0.9rem; /* Adjusted for smaller screens */
+  }
+
+  .value-details h2{
+    font-size: 2rem;
+  }
+
+  .value-details p{
+    font-size: 0.9rem;
+  }
+}
+
+/* Even smaller screens (below 480px) */
+@media (max-width: 480px) {
+  .timeline-content h3 {
+      font-size: 18px; /* Even smaller size */
+  }
+
+  .timeline-content p {
+      font-size: 12px; /* Smaller font size */
+  }
+
+  .timeline-details h3 {
+      font-size: 1.75rem; /* Adjusted for smaller screens */
+  }
+
+  .timeline-details p {
+      font-size: 0.85rem; /* Adjusted */
+  }
+
+  .leadership-section h2 {
+      font-size: 1.8rem; /* Adjust for very small screens */
+  }
+
+  .leadership-card h3 {
+      font-size: 0.9rem; /* Even smaller size */
+  }
+
+  .leadership-card p {
+      font-size: 0.8rem; /* Adjusted */
+  }
+
+  .vision-mission-values h3 {
+      font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .vision-mission-values p {
+      font-size: 0.8rem; /* Reduced font size */
+  }
+
+  .contributors-section h2 {
+      font-size: 1.8rem; /* Adjusted for small screens */
+  }
+
+  .contributors-section p {
+      font-size: 0.8rem; /* Smaller text */
+  }
+
+  .value-details h3{
+    font-size: 1.8rem;
+  }
+
+  .value-details p{
+    font-size: 0.8rem;
+  }
+}
+/* General Section Styling */
+.contributors-section {
+  padding: 50px 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contributors-section h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contributors-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Dialog Styling */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: white;
+  width: 90%;
+  max-width: 50%;
+  max-height: 80vh; /* Limit max height of the popup */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  word-wrap: break-word; /* Wraps long words to the next line */
+  word-break: break-word; /* Breaks long words if necessary */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.popup-box h3 {
+  margin-bottom: 15px; /* Add some space between heading and content */
+}
+
+.popup-box p {
+  line-height: 1.3;
+  font-size: 14px;
+  word-wrap: break-word; /* Wrap text in paragraphs */
+  word-break: break-word; /* Ensure no overflow in words */
+  color: gray;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices like mobile phones */
+@media (max-width: 576px) {
+  .popup-box {
+    width: 90%;
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .popup-box h3 {
+    font-size: 18px;
+  }
+
+  .popup-box p {
+    font-size: 12px;
+  }
+}
+
+/* For medium devices like tablets */
+@media (max-width: 768px) {
+  .popup-box {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .popup-box h3 {
+    font-size: 20px;
+  }
+
+  .popup-box p {
+    font-size: 13px;
+  }
+}
+
+/* For large screens */
+@media (min-width: 1200px) {
+  .popup-box {
+    width: 60%;
+    max-width: 60%;
+  }
+
+  .popup-box h3 {
+    font-size: 24px;
+  }
+
+  .popup-box p {
+    font-size: 16px;
+  }
+}

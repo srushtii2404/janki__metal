@@ -121,18 +121,18 @@ const Contactus = () => {
                 <h2 className='sub-content'>Let's Talk Now</h2>
                 <p className='sub-text me-3 text-start'>Contact us for reliable and high-quality steel solutions for all your construction and industrial needs. Our team is ready to assist you with expert guidance and exceptional service.</p>
                 <div className='map-section'>
-                <div className='map-view'  style={{ width: '100%', height: '312px', margin: '20px 0',opacity: "0.9" }}>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.653264378948!2d72.49708937513984!3d22.999774479189636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9addd43f39f3%3A0xbd8bd0df73d42013!2sJanki%20Metal%20Strips%20Private%20Limited!5e0!3m2!1sen!2sin!4v1736167195458!5m2!1sen!2sin"
-        width="100%"
-        height="100%"
-        style={{ border: '0' }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="Google Maps Location"
-      ></iframe>
-    </div>
+                  <div className='map-view' style={{ width: '100%', height: '312px', margin: '20px 0', opacity: "0.9" }}>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.653264378948!2d72.49708937513984!3d22.999774479189636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9addd43f39f3%3A0xbd8bd0df73d42013!2sJanki%20Metal%20Strips%20Private%20Limited!5e0!3m2!1sen!2sin!4v1736167195458!5m2!1sen!2sin"
+                      width="100%"
+                      height="100%"
+                      style={{ border: '0' }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Google Maps Location"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@ const Contactus = () => {
       </div>
 
       <div className="bg-light py-5 px-4">
-        <h2 className="text-center mb-5 reachout-head ternery-title " data-aos="fade-up"><span><img src="images/titleimg.png" alt="title img" class="px-1" /></span>Reach Out Us</h2>
+        <h2 className="text-center mb-5 reachout-head ternery-title " data-aos="fade-up"><span><img src="images/titleimg.png" alt="title img" className="px-1" /></span>Reach Out Us</h2>
         <div className="row d-flex justify-content-around text-center gap-3">
           <div className="col-lg-3 col-md-6 col-sm-12 mb-4 shadow rounded d-flex flex-column align-items-center contact-item" data-aos="fade-up">
             <MdLocationPin size={"32px"} className="icon" />
@@ -161,6 +161,10 @@ const Contactus = () => {
           </div>
 
         </div>
+      </div>
+
+      <div className="map-container mb-0" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.653130023613!2d72.49708937350665!3d22.99977941718185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9addd43f39f3%3A0xbd8bd0df73d42013!2sJanki%20Metal%20Strips%20Private%20Limited!5e0!3m2!1sen!2sin!4v1735886818191!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   );
