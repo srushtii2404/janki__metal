@@ -5,7 +5,7 @@ export const Category = () => {
     <>
     <section className='category-section'>
       <div className='roundbar second-margin'>
-        <div className='part-1'>
+        <div className='part-1'>  
         <div className='row'>
           <div className='col-lg-5'>
             <div className="left-text-content">

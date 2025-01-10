@@ -84,7 +84,7 @@ const Aboutus = () => {
 
       {/* vision,mission,values */}
       <section className="vision-mission-values">
-        <div className="value-details bg-light p-5">
+        <div className="value-details p-5">
           <h2 data-aos="fade-up">Shaping the Future</h2>
           <p data-aos="fade-up">
             We strive to lead the metal industry with innovation, sustainability, and ethical practices,
@@ -92,9 +92,11 @@ const Aboutus = () => {
           </p>
         </div>
 
+
         <div className="vision-mission-values-container">
-
-
+          <div className='container'>
+         <div className='row'>
+         <div className='col-lg-4'>
           <div className="mission-box">
             <TbTargetArrow size={30} className="m-icon" />
             <h3>Our Mission</h3>
@@ -102,15 +104,20 @@ const Aboutus = () => {
               Our mission is to deliver high-quality metal products, invest in technological advancements, and maintain a strong commitment to customer satisfaction and ethical practices.
             </p>
           </div>
-
+          </div>
+         
+         <div className='col-lg-4'>
           <div className="vision-box">
             <GiBoltEye size={30} className="m-icon" />
             <h3>Our Vision</h3>
             <p>
               Our vision is to become the global leader in the metal industry, providing innovative and sustainable solutions for a better future.
             </p>
+            <div className='box-vision'>
+            </div>
           </div>
-
+          </div>
+          <div className='col-lg-4'>
           <div className="values-box">
             <GiProgression size={30} className="m-icon" />
             <h3>Our Values</h3>
@@ -118,6 +125,9 @@ const Aboutus = () => {
               We believe in integrity, quality, innovation, and social responsibility, guiding us in every aspect of our operations.
             </p>
           </div>
+          </div>
+          </div>
+        </div>
         </div>
       </section>
 
@@ -165,23 +175,30 @@ const Aboutus = () => {
       </p>
       <div className="leadership-cards">
         {aboutus.leadership.map((leader, index) => (
-          <div
-            className={`leadership-card ${expandedCard === index ? "expanded" : ""}`}
-            key={leader.id || index} // Prefer a unique ID if available
-          >
-            <img src={leader.imgSrc} alt={leader.name} className="leadership-image" />
-            <div className="team-content">
-              <h3 className="leader-name">{leader.name}</h3>
-              <p>{leader.position}</p>
-              {expandedCard === index && <p className="details">{leader.details}</p>}
-              <button
-                className="know-more"
-                onClick={() => toggleDetails(index)}
-              >
-                {expandedCard === index ? "Show Less" : `Know More About ${leader.name}`}
-              </button>
-            </div>
-          </div>
+      <div
+      className={`leadership-card ${expandedCard === index ? "expanded" : ""}`}
+      key={leader.id || index}
+    >
+      {/* Image at the top */}
+      <img src={leader.imgSrc} alt={leader.name} className="leadership-image" />
+    
+      {/* Team content */}
+      <div className="team-content">
+        <h3 className="leader-name">{leader.name}</h3>
+        <p>{leader.position}</p>
+        {/* Show extra details if the card is expanded */}
+        {expandedCard === index && <p className="details">{leader.details}</p>}
+    
+        {/* Button for toggling */}
+        <button
+          className="know-more"
+          onClick={() => toggleDetails(index)}
+        >
+          {expandedCard === index ? "Show Less" : `Know More About ${leader.name}`}
+        </button>
+      </div>
+    </div>
+    
         ))}
       </div>
     </section>

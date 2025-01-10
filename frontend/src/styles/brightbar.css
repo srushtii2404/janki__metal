@@ -4,6 +4,7 @@
     padding: 80px 0;
     position: relative;
     overflow-x: hidden !important;
+    overflow-y: hidden;
  }
  .slick-slide {
    margin: 0 10px; /* Add space between slides */
@@ -23,6 +24,11 @@
  .bright-bar .img-container{
    max-width: 750px;
  }
+ @media screen and (max-width:1004px) {
+   .bright-bar .img-container{
+      height: 340px;
+   }
+ }
  
  .bright-bar .img-container img{
     height: 100%;
@@ -32,7 +38,12 @@
     position: relative;
     z-index: 3;
     margin-left: -160px;
-    padding-top: 75px;
+    padding-top: 90px;
+ }
+ @media screen and (max-width:1299px) {
+   .bright-bar .slider-section{
+      padding-top: 34px;
+   }
  }
  .bright-bar .product-card{
    border: 1px solid #ffffff;
@@ -118,10 +129,12 @@
    box-shadow: 0px 4px 0px 0px #000000;
    opacity: 1 !important;
    height: 40px;
+   font-size: 0 !important;
    width: 40px;
       }
       .slick-next:before {
          display: flex;
+         font-size: 0 !important;
              content: '';
              background-image: url(../../public/images/icons/navigate-next.svg);
              height: 40px;
